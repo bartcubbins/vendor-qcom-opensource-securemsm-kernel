@@ -1,3 +1,7 @@
+ifeq ($(SSG_MODULE_ROOT),)
+SSG_MODULE_ROOT := $(srctree)/techpack/securemsm
+endif
+
 LINUXINCLUDE += -I$(SSG_MODULE_ROOT)/ \
                 -I$(SSG_MODULE_ROOT)/linux/ \
                 -I$(SSG_MODULE_ROOT)/include/linux/ \
