@@ -98,6 +98,8 @@ ifeq ($(enable_qcedev_fe),y)
     qcedev_fe_dlkm-objs := qcedev_fe/qcedev_fe.o qcedev_fe/qcedev_smmu.o
 endif
 
+CONFIG_DISABLE_TEST_MODULES := y
+
 #Enable test modules only for LA builds
 ifneq ($(CONFIG_DISABLE_TEST_MODULES), y)
 
